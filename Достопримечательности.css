@@ -1,0 +1,168 @@
+.body {
+    background-color: black;
+}
+
+.img_1 {
+    height: 150px;
+    width: 300px;
+    margin-right: auto;
+    order: 0;
+    border: 7px solid rgb(175, 22, 22);
+}
+
+.img_2 {
+    height: 150px;
+    width: 300px;
+    margin-left: auto;
+    order: 0;
+    border: 7px solid rgb(175, 22, 22);
+}
+
+.head {
+    background-color: white;
+    border: 5px solid rgb(175, 22, 22);
+    position: sticky;
+    display: flex;
+    align-items: flex-start;
+    padding: 1em;
+    max-width: auto;
+}
+
+.head_1 {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 1503px;
+}
+
+.h1 {
+    text-shadow: 2px 2px 3px red, 0 0 0.5em red;
+    font-size: 65px;
+    font-family: Georgia;
+    color: rgb(175, 22, 22);
+    width: auto;
+}
+
+.h2:hover {
+    color: gray;
+}
+
+.h2 {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+    display: block;
+    margin: 15.5px 0px;
+}
+
+.aside {
+    border: 5px solid rgb(175, 22, 22);
+    background-color: white;
+    float: left;
+    position: fixed;
+    z-index: 100;
+    top: 206px;
+    width: 260px;
+}
+
+.article {
+    position: relative;
+    text-align: center;
+    left: 50px;
+}
+
+.h_3 {
+    color: white;
+    padding-left: 20px;
+    font-size: 35px;
+    text-shadow: 4px 4px 5px red;
+    position: relative;
+    text-align: center;
+}
+
+.h_4 {
+    color: grey;
+    font-size: 17;
+    font-family: Bookman;
+    text-decoration: underline;
+}
+
+.menu {
+    position: relative;
+    width: 1225px;
+    float: right;
+    top: 198px;
+    border: 5px solid rgb(175, 22, 22);
+}
+
+.table_1 {
+    border: 7px groove red;
+    border-radius: 10px;
+    margin: 5px 10px 10px 5px;
+    box-shadow: 3px 3px 4px red, 0 0 0.5em red
+}
+
+.img_3 {
+    height: 240px;
+    width: 320px;
+    border: 5px solid red;
+}
+
+.button_1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 3px red, 0 0 0.5em red;
+    background-color: grey;
+    height: 240px;
+    width: 430px;
+}
+
+.button_1:hover {
+    border: 3px solid red;
+    border-radius: 40px;
+    font-size: 60px;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    background-image: linear-gradient(19deg, #ffffff 0%, #ff3021 100%);
+    z-index: 1001;
+    color: #eee;
+}
+
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 10s infinite linear;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 1.5s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
